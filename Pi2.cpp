@@ -77,7 +77,6 @@ int main() {
         for (auto& w : watki) {
             w.join();
         }
-
         // Agregacja wyników
         double przyblizona_pi = 0.0;
         for (const auto& wynik : wyniki_czesciowe) {
