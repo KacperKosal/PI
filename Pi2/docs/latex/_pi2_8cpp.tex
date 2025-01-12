@@ -1,0 +1,76 @@
+\doxysection{Dokumentacja pliku C\+:/\+Users/kacpe/source/repos/\+PI2/\+Pi2.cpp}
+\hypertarget{_pi2_8cpp}{}\label{_pi2_8cpp}\index{C:/Users/kacpe/source/repos/PI2/Pi2.cpp@{C:/Users/kacpe/source/repos/PI2/Pi2.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_pi2_8cpp_ae8d53187945cf7fd2bff45dad1dd50b2}{oblicz\+\_\+sume\+\_\+czesciowa}} (double poczatek, double koniec, double krok, double \&wynik)
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca sumę częściową całki w danym zakresie. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_pi2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Główna funkcja programu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Zmienne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \mbox{\hyperlink{_pi2_8cpp_a78762d6b4a33c275ef5fc4f09e8be589}{console\+\_\+mutex}}
+\begin{DoxyCompactList}\small\item\em Mutex do bezpiecznego wypisywania w konsoli. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{_pi2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{Pi2.cpp@{Pi2.cpp}!main@{main}}
+\index{main@{main}!Pi2.cpp@{Pi2.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_pi2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Główna funkcja programu. 
+
+Pobiera od użytkownika liczbę przedziałów całkowania, a następnie wykonuje obliczenia przybliżonej wartości liczby PI dla różnych ilości wątków (od 1 do 50). Wyniki oraz czas obliczeń dla każdego testu są wypisywane w terminalu.
+
+\begin{DoxyReturn}{Zwraca}
+Kod zakończenia programu (0 oznacza sukces). 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Dolna granica całkowania
+
+\texorpdfstring{$<$}{<} Górna granica całkowania
+
+\texorpdfstring{$<$}{<} Liczba przedziałów całkowania\Hypertarget{_pi2_8cpp_ae8d53187945cf7fd2bff45dad1dd50b2}\index{Pi2.cpp@{Pi2.cpp}!oblicz\_sume\_czesciowa@{oblicz\_sume\_czesciowa}}
+\index{oblicz\_sume\_czesciowa@{oblicz\_sume\_czesciowa}!Pi2.cpp@{Pi2.cpp}}
+\doxysubsubsection{\texorpdfstring{oblicz\_sume\_czesciowa()}{oblicz\_sume\_czesciowa()}}
+{\footnotesize\ttfamily \label{_pi2_8cpp_ae8d53187945cf7fd2bff45dad1dd50b2} 
+void oblicz\+\_\+sume\+\_\+czesciowa (\begin{DoxyParamCaption}\item[{double}]{poczatek}{, }\item[{double}]{koniec}{, }\item[{double}]{krok}{, }\item[{double \&}]{wynik}{}\end{DoxyParamCaption})}
+
+
+
+Funkcja obliczająca sumę częściową całki w danym zakresie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em poczatek} & Początek zakresu całkowania. \\
+\hline
+{\em koniec} & Koniec zakresu całkowania. \\
+\hline
+{\em krok} & Długość kroku całkowania. \\
+\hline
+{\em wynik} & Zmienna, do której zapisany zostanie wynik obliczeń. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja zmiennych}
+\Hypertarget{_pi2_8cpp_a78762d6b4a33c275ef5fc4f09e8be589}\index{Pi2.cpp@{Pi2.cpp}!console\_mutex@{console\_mutex}}
+\index{console\_mutex@{console\_mutex}!Pi2.cpp@{Pi2.cpp}}
+\doxysubsubsection{\texorpdfstring{console\_mutex}{console\_mutex}}
+{\footnotesize\ttfamily \label{_pi2_8cpp_a78762d6b4a33c275ef5fc4f09e8be589} 
+std\+::mutex console\+\_\+mutex}
+
+
+
+Mutex do bezpiecznego wypisywania w konsoli. 
+
