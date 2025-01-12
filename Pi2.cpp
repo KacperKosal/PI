@@ -94,6 +94,5 @@ int main() {
         std::cout << "Czas obliczeń: " << czas_trwania.count() << " sekund" << std::endl;
         std::cout << "-----------------------------" << std::endl;
     }
-
     return 0;
 }
